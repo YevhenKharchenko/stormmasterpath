@@ -1,0 +1,56 @@
+.context-menu {
+  display: none;
+  background: #232c5b;
+  padding: 24px 16px 338px 16px;
+  max-width: 375px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  position: fixed;
+  top: 59px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.context-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+
+.context-list-link {
+  font-family: 'Syne', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 8px 0 10px 0;
+  transition: all 0.3s ease-in-out;
+
+  &:active {
+  }
+}
+
+.is-open {
+  display: block;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.closed {
+  display: none;
+}
+
+.screen-freeze {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}

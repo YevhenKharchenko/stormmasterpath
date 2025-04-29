@@ -1,0 +1,120 @@
+.mission-section {
+  background: #e9e9e9;
+  scroll-margin-top: 56px;
+
+  @include media(desktop) {
+    scroll-margin-top: 52px;
+    background-image: url(../img/mission/bg-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.mission-top-wrapper {
+  padding-top: 40px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #bababa;
+
+  @include media(desktop) {
+    padding-top: 100px;
+  }
+}
+
+.mission-title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #090909;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  @include media(desktop) {
+    margin-bottom: 60px;
+  }
+}
+
+.mission-subtitle {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #090909;
+  word-break: break-word;
+
+  @include media(desktop) {
+    font-size: 40px;
+  }
+}
+
+.mission-bottom-wrapper {
+  padding-top: 24px;
+  padding-bottom: 40px;
+
+  @include media(desktop) {
+    padding-bottom: 100px;
+  }
+}
+
+.mission-bottom-container {
+  @include media(desktop) {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 116px;
+  }
+}
+
+.mission-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.42;
+  color: #090909;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    max-width: 456px;
+  }
+}
+
+.mission-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.mission-list-item {
+  display: flex;
+  gap: 10px;
+}
+
+.mission-item-number {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #090909;
+}
+
+.mission-item-title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #090909;
+  margin-bottom: 8px;
+}
+
+.mission-item-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.42;
+  color: #5d5d5d;
+}

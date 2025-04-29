@@ -1,0 +1,156 @@
+.hero-section {
+  padding-top: 58px;
+  scroll-margin-top: 60px;
+
+  @include media(desktop) {
+    padding-top: 48px;
+    scroll-margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.hero-title-wrapper {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #50567c;
+
+  @include media(desktop) {
+    padding-top: 24px;
+    border-bottom: none;
+    border-right: 1px solid #50567c;
+  }
+}
+
+.hero-title-container {
+  @include media(desktop) {
+    max-width: 729px;
+  }
+}
+
+.hero-title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 120px;
+    margin-bottom: 320px;
+  }
+}
+
+.hero-title-span {
+  display: flex;
+  justify-content: end;
+}
+
+.hero-content-wrapper {
+  @include media(desktop) {
+    max-width: 710px;
+  }
+}
+
+.hero-img-wrapper {
+  padding: 16px 0;
+  border-bottom: 1px solid #50567c;
+
+  @include media(desktop) {
+    padding: 24px 0;
+  }
+}
+
+.hero-text-container {
+  @include media(desktop) {
+    max-width: 710px;
+    padding: 0 24px;
+  }
+}
+
+.hero-text-wrapper {
+  padding: 16px 0;
+
+  @include media(desktop) {
+    max-width: 710px;
+    padding: 24px 0;
+  }
+}
+
+.hero-subtitle {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.hero-subtitle-span {
+  font-size: 36px;
+}
+
+.hero-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.42;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.hero-bottom-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #a5a9bc;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    margin-bottom: 0;
+    max-width: 435px;
+  }
+}
+
+.hero-scroll-link {
+  font-family: 'Syne', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fff;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 8px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.hero-scroll-link-desk {
+  display: none;
+
+  @include media(desktop) {
+    font-family: 'Syne', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+    justify-content: start;
+  }
+}

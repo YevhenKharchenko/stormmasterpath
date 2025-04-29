@@ -1,0 +1,107 @@
+.equipment-section {
+  background: #e9e9e9;
+  scroll-margin-top: 56px;
+
+  @include media(desktop) {
+    scroll-margin-top: 52px;
+    background-image: url(../img/mission/bg-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.equipment-top-wrapper {
+  padding-top: 40px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #bababa;
+
+  @include media(desktop) {
+    padding-top: 100px;
+  }
+}
+
+.equipment-title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #090909;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  @include media(desktop) {
+    margin-bottom: 60px;
+  }
+}
+
+.equipment-subtitle {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #090909;
+  word-break: break-word;
+
+  @include media(desktop) {
+    font-size: 40px;
+  }
+}
+
+.equipment-bottom-wrapper {
+  padding-top: 16px;
+  padding-bottom: 40px;
+
+  @include media(desktop) {
+    padding-top: 24px;
+    padding-bottom: 100px;
+  }
+}
+
+.equipment-bottom-container {
+  @include media(desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.equipment-img-wrapper {
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.equipment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.equipment-list-item {
+  padding: 0 16px 16px 0;
+  border-bottom: 1px solid #bababa;
+}
+
+.equipment-item-title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #090909;
+  margin-bottom: 8px;
+}
+
+.equipment-item-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.42;
+  color: #5d5d5d;
+}
