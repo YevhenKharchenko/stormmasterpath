@@ -1,4 +1,4 @@
-.tools-section {
+.challenges-section {
   background: $_main_bg_color;
   padding-top: 40px;
   scroll-margin-top: 56px;
@@ -9,7 +9,7 @@
   }
 }
 
-.tools-wrapper {
+.challenges-wrapper {
   padding-bottom: 40px;
   border-bottom: 1px solid #1e2013;
 
@@ -18,46 +18,58 @@
   }
 }
 
-.tools-title {
+.challenges-title {
   margin-bottom: 40px;
 }
 
-.tools-subtitle {
+.challenges-subtitle {
   font-family: 'Petrona', sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.3;
-  color: #4f5144;
-  margin-bottom: 40px;
+  color: #1e2013;
+  margin-bottom: 16px;
 
   @include media(desktop) {
     font-size: 28px;
+    margin-bottom: 8px;
   }
 }
 
-.tools-list {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+.challenges-text {
+  font-family: 'Petrona', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #1e2013;
   margin-bottom: 40px;
 
   @include media(desktop) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 32px;
+    font-size: 20px;
+    margin-bottom: 80px;
   }
 }
 
-.tools-list-item {
+.challenges-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+
   @include media(desktop) {
-    max-width: calc((100% - 32px) / 2);
+    margin-bottom: 80px;
   }
 }
 
-.tools-item-title {
+.challenges-list-item {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #1e2013;
+}
+
+.challenges-item-title {
   background: #1e2013;
-  border-radius: 14px;
-  padding: 2px 12px;
+  border-radius: 16px;
+  padding: 2px 8px;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 15px;
@@ -71,7 +83,7 @@
   }
 }
 
-.tools-item-text {
+.challenges-item-text {
   font-family: 'Petrona', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -83,7 +95,7 @@
   }
 }
 
-.tools-link {
+.challenges-link {
   background: #1e2013;
   border-radius: 27px;
   padding: 16px 26px;
