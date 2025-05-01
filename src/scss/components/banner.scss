@@ -1,8 +1,9 @@
 .cookie-banner-section {
-  background-color: #fff;
+  background: #1e2013;
+  padding: 32px 0;
   width: 100%;
-  max-width: 375px;
-  padding: 24px 0;
+  max-width: 343px;
+  border-radius: 32px;
   position: fixed;
   bottom: 0;
   left: 50%;
@@ -11,95 +12,71 @@
   display: none;
 
   @include media(desktop) {
-    max-width: 1440px;
-    padding: 40px 0;
-    justify-content: space-between;
+    max-width: 1262px;
   }
 }
 
 .cookie-container {
+  padding: 0 32px;
+
   @include media(desktop) {
     display: flex;
     justify-content: space-between;
   }
 }
 
-.cookie-banner-text-wrapper {
-  margin-bottom: 32px;
+.cookie-banner-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
 
   @include media(desktop) {
     margin-bottom: 0;
-    max-width: 837px;
-  }
-}
-
-.cookie-banner-title {
-  font-family: 'Syne', sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1;
-  text-transform: uppercase;
-  color: #090909;
-  margin-bottom: 8px;
-
-  @include media(desktop) {
-    margin-bottom: 16px;
-  }
-}
-
-.cookie-banner-text {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.42;
-  color: #090909;
-
-  @include media(desktop) {
+    max-width: 622px;
+    text-align: left;
   }
 }
 
 .cookie-banner-buttons {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 
   @include media(desktop) {
-    gap: 16px;
-    align-items: center;
+    flex-direction: row;
+    gap: 32px;
   }
 }
 
 .cookie-btn {
-  width: calc((100% - 8px) / 2);
+  width: 100%;
+  max-width: 256px;
+  border-radius: 28px;
+  padding: 16px 32px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
 
   @include media(desktop) {
-    width: 187px;
-    height: 46px;
+    width: 256px;
   }
 }
 
 .accept-btn {
-  border-radius: 4px;
-  padding: 16px;
-  background: #232c5b;
-  font-family: 'Syne', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1;
-  text-transform: uppercase;
-  color: #fff;
+  background: #fff;
+  color: #1e2013;
 }
 
 .decline-btn {
-  border: 1px solid #232c5b;
-  border-radius: 4px;
-  padding: 16px;
-  background: transparent;
-  font-family: 'Syne', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1;
-  text-transform: uppercase;
-  color: #232c5b;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
 }
 
 .show-cookie-banner {
