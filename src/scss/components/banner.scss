@@ -4,10 +4,12 @@
   width: 100%;
   max-width: 343px;
   border-radius: 32px;
+  margin: 0 auto;
   position: fixed;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  transform: none;
   z-index: 100;
   display: none;
 
@@ -71,12 +73,26 @@
 .accept-btn {
   background: #fff;
   color: #1e2013;
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &.active {
+    background: #1e2013;
+    color: #dbf784;
+  }
 }
 
 .decline-btn {
   border: 1px solid #fff;
   color: #fff;
   background-color: transparent;
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &.active {
+    color: #dbf784;
+    border-color: #dbf784;
+  }
 }
 
 .show-cookie-banner {
