@@ -2,14 +2,14 @@
   background-color: #e8e5e0;
   padding-top: 120px;
   padding-bottom: 80px;
-  scroll-margin-top: 60px;
+  scroll-margin-top: 56px;
   background-image: url(../img/hero/hero-bg-mob.png);
   background-repeat: no-repeat;
   background-position: center;
 
   @include media(desktop) {
     padding-bottom: 104px;
-    scroll-margin-top: 50px;
+    scroll-margin-top: 52px;
     background-image: url(../img/hero/hero-bg-desk.png);
   }
 }
